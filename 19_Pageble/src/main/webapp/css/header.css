@@ -1,0 +1,66 @@
+/*
+- - - basic styling - - */
+
+.page-header {
+    height: 90px;
+    background: #d46b41;
+    padding: 1em;
+    overflow:hidden;
+    border-bottom: 6px solid #e27c53;
+}
+.page-logo {
+    max-width:100px;
+    height :auto;
+}
+.pull-left {
+    float:left;
+}
+.pull-right {
+    float:right;
+}
+.menu {
+    overflow:hidden;
+    list-style: none;
+}
+.menu li {
+    float:left;
+    font-family:sans-serif;
+    margin-left: 1em;
+}
+.menu li a {
+    color:#fff;
+    text-decoration:none;
+}
+
+.page-content {
+    max-width: 600px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 160px;
+}
+p {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #999;
+    line-height:1.3em;
+}
+
+
+
+/*
+- - - Relevant to demo - - - */
+.page-header {
+    position: fixed;
+    left:0; top:0; width:100%;
+    box-sizing:border-box;
+    transition: top 0.6s;
+
+}
+
+.page-header.off-canvas {
+    top: -89px;
+}
+.page-header.fixed {
+    top:0;
+    z-index: 9999;
+}
